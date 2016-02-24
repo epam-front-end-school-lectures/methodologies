@@ -1,43 +1,3 @@
-
-.cols {
-	width: 1600px;
-	text-align: center;
-	}
-
-.cols li {
-	display: inline-block;
-	width: 48%;
-	margin-left: 0;
-	text-align: left;
-	vertical-align: top;
-	}
-
-.cols li + li {
-	margin-left: 2%;
-	}
-
-.cols h3 {
-	text-align: center;
-	}
-
-/* cols-3 */
-
-.cols-3 li {
-	display: inline-block;
-	width: 32%;
-	margin-left: 0;
-	text-align: left;
-	vertical-align: top;
-	}
-
-.cols-3 li + li {
-	margin-left: 2%;
-	}
-
-.cols-3 li figure {
-	text-align: center;
-	}
-
 /* author */
 
 .reveal div.author {
@@ -62,42 +22,10 @@
 	margin-top: 40px;
 	}
 
-/* Microdata section */
-
-.microdata pre code span.attribute,
-.microdata pre code span.value {
-	font-weight: bold;
-	}
-
 /* html5 forms section */
 
 iframe.twitter-tweet {
     width: 100% !important;
-}
-
-/* selectors page */
-
-.reveal .selector-level {
-    display: inline-block;
-    width: 20%;
-    vertical-align: middle;
-}
-
-.reveal .selector-array {
-    display: inline-block;
-    width: 75%;
-    vertical-align: middle;
-}
-
-.reveal .methodology-item {
-    display: inline-block;
-    margin-top: 200px;
-    margin-left: 100px;
-    font-size: 2em;
-}
-
-.reveal .methodology-item:first-child {
-    margin-left: 0;
 }
 
 .reveal h1[data-number]:before,
@@ -133,15 +61,6 @@ iframe.twitter-tweet {
 	margin-top: 60px;
 }
 
-.reveal section img {
-	border: 0;
-}
-
-.reveal .slide-number {
-	font-size: .5em;
-	color: #464547;
-}
-
 .reveal a:not(.image) {
 	color: #39c2d7;
 }
@@ -173,22 +92,12 @@ iframe.twitter-tweet {
 	background-size: cover !important;
 }
 
-.deeper body {
-	background: #000 url(../assets/i/deeper.jpg) center no-repeat;
-	background-size: cover;
-}
-
 .smacss-blurred body * {
 	color: #fff !important;
 }
 
-.greetings body .slide-background.present {
+.mainpage body .slide-background.present {
 	background-position: center !important;
-	background-size: cover !important;
-}
-
-.bootstrap-landing .slide-background.present {
-	background-color: transparent !important;
 	background-size: cover !important;
 }
 
@@ -221,7 +130,7 @@ body .slide-background {
 	background-size: cover !important;
 }
 
-.bricks body .slide-background.present::before {
+.everything-is-block-2 body .slide-background.present::before {
 	content: "";
 	position: fixed;
 	left: 0;
@@ -231,7 +140,7 @@ body .slide-background {
 	background: rgba(0,0,0,.4);
 }
 
-.bricks body * {
+.everything-is-block-2 body * {
 	color: #fff !important;
 }
 
@@ -268,7 +177,7 @@ body .slide-background {
 	background-color: #fff;
 }
 
-.bricks .reveal .progress span {
+.everything-is-block-2 .reveal .progress span {
 	background-color: #fff;
 }
 
@@ -278,11 +187,11 @@ body .slide-background {
 }
 
 .epam-landing-header body .slide-background {
-	background-position: center 10% !important;
+	background-position: center 2% !important;
 	background-size: contain !important;
 }
 
-.epam-landing-header-mod body .slide-background {
+.bem-modifier-example-highlighted-2 body .slide-background {
 	background-position: center 2% !important;
 }
 
@@ -309,35 +218,7 @@ body .slide-background {
 	margin-top: 60px;
 }
 
-code.xml,
-code.css {
-	position: relative;
-}
-
-code.xml::after,
-code.css::after {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	margin-right: 20px;
-	margin-bottom: 10px;
-	font-size: .75em;
-	color: #1a9cb0;
-}
-
-code.xml::after {
-	content: "HTML";
-}
-
-code.css::after {
-	content: "CSS";
-}
-
-code.less::after {
-	content: "LESS";
-}
-
-.greetings .reveal section img {
+.mainpage .reveal section img {
 	position: absolute;
 	left: 0;
 	top: -100%;
@@ -345,7 +226,7 @@ code.less::after {
 	box-shadow:  none;
 }
 
-.greetings body::before {
+.mainpage body::before {
 	content: "";
 	position: absolute;
 	right: 5%;
@@ -357,7 +238,7 @@ code.less::after {
 	background-size: cover;
 }
 
-.greetings body::after {
+.mainpage body::after {
 	content: "23 February, 2016";
 	position: absolute;
 	right: 7%;
@@ -368,7 +249,7 @@ code.less::after {
 	white-space: nowrap;
 }
 
-.greetings .reveal section h1 {
+.mainpage .reveal section h1 {
 	margin-top: 100px;
 	font-size: 3em;
 	color: rgba(255,255,255,.95);
@@ -376,17 +257,17 @@ code.less::after {
 				 0 -1px 3px rgba(0,0,0,.5);
 }
 
-.greetings .reveal section h3 {
+.mainpage .reveal section h3 {
 	margin-top: 100px;
 	text-shadow: 0 1px 3px rgba(0,0,0,.5),
 				 0 -1px 1px rgba(0,0,0,.5);
 }
 
-.greetings .reveal section > * {
+.mainpage .reveal section > * {
 	color: #fff;
 }
 
-.wheel body .slide-background.present {
+.evolution body .slide-background.present {
 	background-position: center !important;
 }
 
@@ -399,4 +280,37 @@ code.less::after {
 .reveal ul li,
 .reveal ol li {
 	list-style: none !important;
+}
+
+.bem-element-rules .reveal ul {
+	margin-top: 0;
+}
+
+.bem-block-code .reveal ol {
+	margin-top: 0;
+}
+
+.bem-modifier-rules .reveal ul {
+	margin-top: 0;
+}
+
+.bem-modifier-example-highlighted-2 .reveal ul {
+	margin-top: 30vh;
+}
+
+.bem-tree .bem-tree__header {
+	margin-top: 100px;
+	font-size: 3.5em;
+}
+
+.bem-block-rules .reveal ul {
+	margin-top: 0;
+}
+
+.bem-element-example-header .reveal section {
+	padding-top: 30vh;
+}
+
+.bem-element-example-header .reveal ul {
+	margin-top: 5vh;
 }
