@@ -278,17 +278,17 @@
                     <ul>
                         <li>
                             <div>header</div>
-                            <pre><code class="xml"><header class="header"> ... </header></code></pre>
+                            <pre><code class="xml">&lt;header class="header"&gt; ... &lt;/header&gt;</code></pre>
                             <pre><code class="css">.header { ... }</code></pre>
                         </li>
                         <li class="fragment">
                             <div>navigation</div>
-                            <pre><code class="xml"><nav class="navigation"> ... </nav></code></pre>
+                            <pre><code class="xml">&lt;nav class="navigation"&gt; ... &lt;/nav&gt;</code></pre>
                             <pre><code class="css">.navigation { ... }</code></pre>
                         </li>
                         <li class="fragment">
                             <div>footer</div>
-                            <pre><code class="xml"><footer class="footer">...</footer></code></pre>
+                            <pre><code class="xml">&lt;footer class="footer"&gt;...&lt;/footer&gt;</code></pre>
                             <pre><code class="css">.footer { ... }</code></pre>
                         </li>
                     </ul>
@@ -302,23 +302,23 @@
                     <ul>
                         <li>
                             <div>Element name separates from block name by <strong>double underline</strong></div>
-<pre><code class="xml"><div class="block">
-    <div class="block__element"></div>
-    <div class="block__yet-one-element"></div>
-</div></code></pre>
+<pre><code class="xml">&lt;div class="block"&gt;
+    &lt;div class="block__element"&gt;&lt;/div&gt;
+    &lt;div class="block__yet-one-element"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <pre><code class="css">.block__element { ... }
 
 .block__yet-one-element { ... }</code></pre>
                         </li>
                         <li class="fragment">
                             <div>Elements may contain other elements</div>
-<pre><code class="xml"><article class="article">
-    <header class="article__title"> ... </header>
-    <aside class="article__data">
-        <span class="article__author"> ... </span>
-        <time class="article__pubdate"> ... </time>
-    </aside>
-</article></code></pre>
+<pre><code class="xml">&lt;article class="article"&gt;
+    &lt;header class="article__title"&gt; ... &lt;/header&gt;
+    &lt;aside class="article__data"&gt;
+        &lt;span class="article__author"&gt; ... &lt;/span&gt;
+        &lt;time class="article__pubdate"&gt; ... &lt;/time&gt;
+    &lt;/aside&gt;
+&lt;/article&gt;</code></pre>
                             <div class="fragment"><strong>...but not logically!</strong></div>
                         </li>
                     </ul>
@@ -344,12 +344,12 @@
                             </ul>
                         </li>
                         <li class="fragment">
-                            <pre><code class="xml"><header class="header">
-    <a class="header__logo"></a>
-    <ul class="header-menu"> ... </ul>
-    <a class="header__email"></a>
-    <button class="header__search"></button>
-</header></code></pre>
+                            <pre><code class="xml">&lt;header class="header"&gt;
+    &lt;a class="header__logo"&gt;&lt;/a&gt;
+    &lt;ul class="header-menu"&gt; ... &lt;/ul&gt;
+    &lt;a class="header__email"&gt;&lt;/a&gt;
+    &lt;button class="header__search"&gt;&lt;/button&gt;
+&lt;/header&gt;</code></pre>
                         </li>
                     </ul>
                 </section>
@@ -370,23 +370,23 @@
                         </li>
                         <li class="fragment">
                             <div>Modifier separates from block name or element name by <strong>one underline</strong></div>
-                            <pre><code class="xml"><div class="block-name_mod-name"> ... </div>
+                            <pre><code class="xml">&lt;div class="block-name_mod-name"&gt; ... &lt;/div&gt;
 
-<div class="menu_state_hidden"> ... </div></code></pre>
+&lt;div class="menu_state_hidden"&gt; ... &lt;/div&gt;</code></pre>
                         </li>
                         <li class="fragment">
                             <div>Both blocks and elements may have modifiers</div>
-                            <pre><code class="xml"><div class="block_mod"> ... </div>
+                            <pre><code class="xml">&lt;div class="block_mod"&gt; ... &lt;/div&gt;
 
-<div class="block__elem_mod"> ... </div>
+&lt;div class="block__elem_mod"&gt; ... &lt;/div&gt;
 
-<li class="menu__item_state_active"> ... </li></code></pre>
+&lt;li class="menu__item_state_active"&gt; ... &lt;/li&gt;</code></pre>
                         </li>
                         <li class="fragment">
                             <div>Short modifier format &mdash; logical boolean modifier</div>
-                            <pre><code class="xml"><div class="block_visible"> ... </div>
+                            <pre><code class="xml">&lt;div class="block_visible"&gt; ... &lt;/div&gt;
 
-<div class="slider__element_current"> ... </div></code></pre>
+&lt;div class="slider__element_current"&gt; ... &lt;/div&gt;</code></pre>
                         </li>
                         <li class="fragment">
                             <div>Modifier can be added only to <strong>existing</strong> block or element, it <strong>DOES NOT</strong> exist by itself</div>
@@ -401,23 +401,23 @@
                 <section data-state="epam-landing-header-mod" data-background="url(assets/i/epam-landing-header-modifiers.jpg)">
                     <ul style="margin-top:200px;">
                         <li class="fragment">
-        <pre><code class="xml"><ul class="header-menu">
-    <li class="header-menu__item header-menu__item_state_active">
-        <a class="header-menu__title"> ... </a>
-    </li>
-    <li class="header-menu__item">
-        <a class="header-menu__title"> ... </a>
-    </li>
-    <li class="header-menu__item">
-        <a class="header-menu__title"> ... </a>
-    </li>
-</ul></code></pre>
+        <pre><code class="xml">&lt;ul class="header-menu"&gt;
+    &lt;li class="header-menu__item header-menu__item_state_active"&gt;
+        &lt;a class="header-menu__title"&gt; ... &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="header-menu__item"&gt;
+        &lt;a class="header-menu__title"&gt; ... &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="header-menu__item"&gt;
+        &lt;a class="header-menu__title"&gt; ... &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
                         </li>
                         <li class="fragment">
-                            <pre><code class="xml"><nav class="navigation">
-    <a class="navigation__item"> ... </a>
-    <a class="navigation__item navigation__item_current"> ... </a>
-</nav></code></pre>
+                            <pre><code class="xml">&lt;nav class="navigation"&gt;
+    &lt;a class="navigation__item"&gt; ... &lt;/a&gt;
+    &lt;a class="navigation__item navigation__item_current"&gt; ... &lt;/a&gt;
+&lt;/nav&gt;</code></pre>
                         </li>
                     </ul>
                 </section>
@@ -433,23 +433,23 @@
                     <h2>Most important things</h2>
                     <div class="topic-container">
                         <div>Element's element <strong>DOES NOT</strong> exist in BEM</div>
-<pre><code class="xml"><div class="block">
-    <div class="block__elem1">
-        <div class="block__elem2">
-            <div class="block__elem3"></div>
-        </div>
-    </div>
-</div></code></pre>
+<pre><code class="xml">&lt;div class="block"&gt;
+    &lt;div class="block__elem1"&gt;
+        &lt;div class="block__elem2"&gt;
+            &lt;div class="block__elem3"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <pre class="fragment"><code class="css">.block { ... }
 .block__elem1 { ... }
 .block__elem2 { ... }
 .block__elem3 { ... }</code></pre>
-<pre class="fragment"><code class="xml"><div class="block">
-    <div class="block__elem1">
-        <div class="block__elem2"></div>
-    </div>
-    <div class="block__elem3"></div>
-</div></code></pre>
+<pre class="fragment"><code class="xml">&lt;div class="block"&gt;
+    &lt;div class="block__elem1"&gt;
+        &lt;div class="block__elem2"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="block__elem3"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
                     </div>
                 </section>
 
@@ -494,7 +494,7 @@
                             </li>
                             <li class="fragment">
                                 <div>result</div>
-                                <pre><code class="xml"><button class="order__button button"></button></code></pre>
+                                <pre><code class="xml">&lt;button class="order__button button"&gt;&lt;/button&gt;</code></pre>
                             </li>
                             <li class="fragment">
                                 <pre><code class="css">.order .button { ... }</code></pre>
@@ -551,7 +551,7 @@
                     <div class="author">
                         <img class="author-avatar" src="assets/i/avatar.jpg" alt="" />
                         <div class="author-main">
-                            <h4class="author-name">Yevhen Isakov</h4>
+                            <h4 class="author-name">Yevhen Isakov</h4>
                             <div class="author-contacts">
                                 <div class="author-contacts_twitter"><a href="https://twitter.com/is4kov" target="_blank">@is4kov</a></div>
                             </div>
@@ -563,7 +563,7 @@
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+		<script src="js/reveal.js"></script>
 
 		<script>
 
