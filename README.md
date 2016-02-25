@@ -1,7 +1,7 @@
 # Methodologies
 Slides for the lecture about modern methodologies and approaches for developing and supporting projects of any complexity
 
-### Lates version of the presentation online
+### Latest version of the presentation online
 
 https://epam-front-end-school-lectures.github.io/methodologies
 
