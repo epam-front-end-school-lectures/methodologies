@@ -239,7 +239,7 @@ body .slide-background {
 }
 
 .mainpage body::after {
-	content: "23 February, 2016";
+	content: "15 February, 2018";
 	position: absolute;
 	right: 7%;
 	bottom: 5%;
