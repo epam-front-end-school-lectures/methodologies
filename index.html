@@ -47,16 +47,18 @@
 
 				<section id="mainpage" data-state="mainpage method-bg" data-background="url(assets/i/lake_view.jpg)">
                     <h1>Methodologies</h1>
-                    <h3>Mariia Tarasiuk & Yevhen Isakov</h3>
+                    <h3>Mariia Tarasiuk</h3>
 				</section>
 
-				<section id="why" data-state="after-bgsize-cover" data-background-transition="fade">
+				<!-- <section id="why" data-state="after-bgsize-cover" data-background-transition="fade">
 					<h2>Why?</h2>
-				</section>
+				</section> -->
 
                 <section id="evolution" data-state="evolution" data-background="url(assets/i/wheel.jpg)"></section>
 
-
+								<section id="why" data-state="after-bgsize-cover" data-background-transition="fade">
+									<h2>Why?</h2>
+								</section>
                 <section id="newbie-code" data-state="newbie-code method-bg" data-background="#000 url(assets/i/newbie-code.jpg)" data-background-transition="fade"></section>
 
                 <section id="to-be-or-not-to-be" data-state="to-be-or-not-to-be">
@@ -222,7 +224,7 @@
                         </ul>
                     </div>
                 </section>
-<!-- 
+<!--
                 <section id="aib-abbr" data-state="aib-abbr">
                     <div class="method-name">
                         <div><span class="first-letter">A</span><span class="fragment">bsolutely</span></div>
@@ -231,9 +233,9 @@
                     </div>
                 </section> -->
 
-                <section id="bem-naming" data-state="bem-naming">
+                <!-- <section id="bem-naming" data-state="bem-naming">
                     <h2>BEM Naming</h2>
-                </section>
+                </section> -->
 
                 <section id="everything-is-block" data-state="everything-is-block" data-background="#fff">
                     <h2><span class="first-letter">Everything</span> on page <span class="first-letter">is block</span></h2>
@@ -273,7 +275,7 @@
 
                 <section id="bem-block-example-highlighted" data-state="epam-landing" data-background="url(assets/i/epam-landing-blocks.jpg)"></section>
 
-                <section id="bem-block-example-highlighted-2" data-state="epam-landing" data-background="url(assets/i/epam-landing-blocks-highlighted.jpg)"></section>
+                <!-- <section id="bem-block-example-highlighted-2" data-state="epam-landing" data-background="url(assets/i/epam-landing-blocks-highlighted.jpg)"></section> -->
 
                 <section id="bem-block-code" data-state="bem-block-code">
                     <ul>
@@ -331,7 +333,7 @@
 
                 <section id="bem-element-example-elements" data-state="epam-landing" data-background="url(assets/i/epam-landing-elements.jpg)"></section>
 
-                <section id="bem-element-example-highlighted" data-state="epam-landing" data-background="url(assets/i/epam-landing-elements-highlighted.jpg)"></section>
+                <!-- <section id="bem-element-example-highlighted" data-state="epam-landing" data-background="url(assets/i/epam-landing-elements-highlighted.jpg)"></section> -->
 
                 <section id="bem-element-example-header" data-state="epam-landing epam-landing-header bem-element-example-header" data-background="url(assets/i/epam-landing-header.jpg)">
                     <div>
@@ -341,6 +343,7 @@
                             <li class="fragment">menu</li>
                             <li class="fragment">email-icon</li>
                             <li class="fragment">search-icon</li>
+                            <li class="fragment">hamburger-menu</li>
                         </ul>
                     </div>
                         <div class="fragment">
@@ -349,14 +352,10 @@
     &lt;ul class="header-menu"&gt; ... &lt;/ul&gt;
     &lt;a class="header__email"&gt;&lt;/a&gt;
     &lt;button class="header__search"&gt;&lt;/button&gt;
+    &lt;button class="header__hamburger-menu"&gt;&lt;/button&gt;
 &lt;/header&gt;</code></pre>
                         </div>
                     </ul>
-                </section>
-
-                <section id="bem-tree" data-state="bem-tree">
-                    <h2>DOM Tree</h2>
-                    <h2 class="fragment bem-tree__header"><span class="first-letter">BEM</span> Tree</h2>
                 </section>
 
                 <section id="bem-modifier" data-state="bem-modifier">
@@ -401,24 +400,31 @@
                 <section id="bem-modifier-example-highlighted-2" data-state="bem-modifier-example-highlighted-2" data-background="url(assets/i/epam-landing-header-modifiers.jpg)">
                     <ul>
                         <li class="fragment">
-        <pre><code class="xml">&lt;ul class="header-menu"&gt;
-    &lt;li class="header-menu__item header-menu__item_state_active"&gt;
-        &lt;a class="header-menu__title"&gt; ... &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="header-menu__item"&gt;
-        &lt;a class="header-menu__title"&gt; ... &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="header-menu__item"&gt;
-        &lt;a class="header-menu__title"&gt; ... &lt;/a&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+        <pre><code class="xml">
+  &lt;div class="tabs"&gt;
+    &lt;ul class="tabs__ul"&gt;
+      &lt;li class="tabs__title"&gt;
+        &lt;a class="tabs__link tabs__link_active"&gt; ... &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="tabs__title"&gt;
+        &lt;a class="tabs__link"&gt; ... &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="tabs__title"&gt;
+        &lt;a class="tabs__link"&gt; ... &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class="tabs__item tabs__item_active"&gt;... &lt;/div&gt;
+    &lt;div class="tabs__item"&gt;... &lt;/div&gt;
+    &lt;div class="tabs__item"&gt;... &lt;/div&gt;
+    &lt;div class="tabs__item"&gt;... &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
                         </li>
-                        <li class="fragment">
+                        <!-- <li class="fragment">
                             <pre><code class="xml">&lt;nav class="navigation"&gt;
     &lt;a class="navigation__item"&gt; ... &lt;/a&gt;
     &lt;a class="navigation__item navigation__item_current"&gt; ... &lt;/a&gt;
 &lt;/nav&gt;</code></pre>
-                        </li>
+                        </li> -->
                     </ul>
                 </section>
 
@@ -467,7 +473,7 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <section id="bem-block-vs-element" data-state="bem-block-vs-element">
                     <h2><span class="first-letter">B</span>lock or <span class="first-letter">e</span>lement?</h2>
                     <div class="topic-container">
@@ -477,7 +483,11 @@
                         </ol>
                     </div>
                 </section>
-
+                <section id="bem-tree" data-state="bem-tree">
+                    <h2>DOM Tree</h2>
+                    <h2 class="fragment bem-tree__header"><span class="first-letter">BEM</span> Tree</h2>
+                    <img class="fragment bem-tree__image" src="assets/i/bem-tree.jpg" alt="" />
+                </section>
                 <section id="bem-mixing" data-state="bem-mixing">
                     <h2>Mixing</h2>
                     <div class="topic-container">
@@ -495,9 +505,6 @@
                             <li class="fragment">
                                 <div>result</div>
                                 <pre><code class="xml">&lt;button class="order__button button"&gt;&lt;/button&gt;</code></pre>
-                            </li>
-                            <li class="fragment">
-                                <pre><code class="css">.order .button { ... }</code></pre>
                             </li>
                         </ul>
                     </div>
@@ -547,7 +554,7 @@
 
                 <section id="thank-you" data-state="thank-you">
                     <h2>Thank you!</h2>
-<!-- 
+<!--
                     <div class="author">
                         <img class="author-avatar" src="assets/i/avatar.jpg" alt="" />
                         <div class="author-main">
