@@ -87,7 +87,7 @@
                     <div class="topic-container">
                         <ul>
                             <li class="fragment">
-                                <h4 style="text-align: center;">Yahoo, ~2004</h4>
+                                <h4 style="text-align: center;">Yahoo, ~2007</h4>
                             </li>
                             <li class="fragment method-author">
                                 <img class="method-author__avatar" src="assets/i/sullivan.jpg" alt="" />
@@ -244,7 +244,7 @@
                     <h2><span class="first-letter">Everything</span> on page <span class="first-letter">is block</span></h2>
                 </section>
 
-                <section id="everything-is-block-2" data-state="everything-is-block-2" data-background="url(assets/i/bricks.jpg)">
+                <section id="everything-is-block-2" data-state="everything-is-block-2" data-background="url(assets/i/bricks.jpg)" data-background-size="cover">
                     <h2>Everything on page is block</h2>
                 </section>
 
@@ -352,7 +352,6 @@
                             <li class="fragment">menu</li>
                             <li class="fragment">email-icon</li>
                             <li class="fragment">search-icon</li>
-                            <li class="fragment">hamburger-menu</li>
                         </ul>
                     </div>
                         <div class="fragment">
@@ -361,7 +360,6 @@
     &lt;ul class="header__menu"&gt; ... &lt;/ul&gt;
     &lt;a class="header__email"&gt;&lt;/a&gt;
     &lt;button class="header__search"&gt;&lt;/button&gt;
-    &lt;button class="header__hamburger-menu"&gt;&lt;/button&gt;
 &lt;/header&gt;</code></pre>
                         </div>
                     </ul>
@@ -377,19 +375,20 @@
                             <div>By default, modifiers are written in format <strong>key_value</strong></div>
                         </li>
                         <li class="fragment">
-                            <div>Modifier separates from block name or element name by <strong>one underline</strong></div>
-                            <pre><code class="xml">&lt;div class="block-name_mod-name"&gt; ... &lt;/div&gt;
-
-&lt;div class="menu_state_hidden"&gt; ... &lt;/div&gt;</code></pre>
-                        </li>
-                        <li class="fragment">
-                            <div>Both blocks and elements may have modifiers</div>
-                            <pre><code class="xml">&lt;div class="block_mod"&gt; ... &lt;/div&gt;
+                          <div>Both blocks and elements may have modifiers</div>
+                          <pre><code class="xml">&lt;div class="block_mod"&gt; ... &lt;/div&gt;
 
 &lt;div class="block__elem_mod"&gt; ... &lt;/div&gt;
 
 &lt;li class="menu__item_state_active"&gt; ... &lt;/li&gt;</code></pre>
                         </li>
+                        <li class="fragment">
+                            <div>Modifier separates from block name or element name by <strong>one underline</strong></div>
+                            <pre><code class="xml">&lt;div class="block-name_mod-name"&gt; ... &lt;/div&gt;
+
+&lt;div class="menu_state_hidden"&gt; ... &lt;/div&gt;</code></pre>
+                        </li>
+
                         <li class="fragment">
                             <div>Short modifier format &mdash; logical boolean modifier</div>
                             <pre><code class="xml">&lt;div class="block_visible"&gt; ... &lt;/div&gt;
@@ -563,9 +562,19 @@
 
                 <section id="thank-you" data-state="thank-you">
                     <h2>Thank you!</h2>
-<!--
+                    
                     <div class="author">
                         <img class="author-avatar" src="assets/i/avatar.jpg" alt="" />
+                        <div class="author-main">
+                            <h4 class="author-name">Mariia Tarasiuk</h4>
+                            <div class="author-contacts">                              
+                                <div class="author-contacts_upsa"><a href="https://telescope.epam.com/who/key/upsaId/4060741400308006341" target="_blank">Telescope profile</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--
+                    <div class="author">
+                        <img class="author-avatar" src="assets/i/avatar1.jpg" alt="" />
                         <div class="author-main">
                             <h4 class="author-name">Yevhen Isakov</h4>
                             <div class="author-contacts">
